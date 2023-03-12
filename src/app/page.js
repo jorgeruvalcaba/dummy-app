@@ -1,22 +1,14 @@
+import Nav from '@/components/Nav'
+import Returns from '@/components/Returns'
+import PlaceTrade from '@/components/PlaceTrade'
+
 export default function Page() {
   return (
-    <div>
-      <h1 style={{'textAlign':'center'}}>Awesome App</h1>
+    <div className="p-14 w-full flex flex-col justify-center items-center">
+      <h1 className="text-3xl text-center font-bold">Awesome App</h1>
       <Nav />
       <Returns />
       <PlaceTrade />
     </div>
   )
-}
-
-async function Nav() {
-  return <h2>Nav</h2>;
-}
-
-async function Returns() {
-  return <h2>Returns</h2>;
-}
-
-async function PlaceTrade() {
-  return <h2>PlaceTrade</h2>;
 }
